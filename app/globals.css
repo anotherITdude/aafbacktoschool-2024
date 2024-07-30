@@ -2,28 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "DIN";
+  src: url("../Fonts/D-DIN.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: "DIN-Black";
+  src: url("../Fonts/DIN\ Black.ttf");
+}
+
+@font-face {
+  font-family: "DIN-Regular";
+  src: url("../Fonts/DIN2014-Regular.ttf");
+}
+@font-face {
+  font-family: "DINCondensed-Regular";
+  src: url("../Fonts/DINCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: url("../Fonts/D-DINCondensed-Bold_0.otf");
+}
+@font-face {
+  font-family: "DIN-Bold";
+  src: url("../Fonts/D-DIN-Bold.ttf");
+}
+@font-face {
+  font-family: "DIN-Demi";
+  src: url("../Fonts/DIN\ 2014\ Demi.ttf");
+}
+@font-face {
+  font-family: "DINArabic-Black";
+  src: url("../Fonts/DINArabic-Black.ttf");
+}
+@font-face {
+  font-family: "helvetica-neue-lt-arabic-75-bol";
+  src: url("../Fonts/helvetica-neue-lt-arabic-75-bold.ttf");
+}
+
+@font-face {
+  font-family: "HelveticaNeueLTArabic-Roman";
+  src: url("../Fonts/HelveticaNeueLTArabic-Roman.ttf");
+}
+
+@font-face {
+  font-family: "Gotham-Medium";
+  src: url("../Fonts/Gotham-Medium_5.otf");
+}
+
+/* @layer base {
+  * {
+    @apply border-border;
   }
-}
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  body {
+    background: #ccc;
+  }
 }
 
 @layer utilities {
