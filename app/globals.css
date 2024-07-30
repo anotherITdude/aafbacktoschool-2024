@@ -60,6 +60,12 @@
   }
 } */
 
+@layer components {
+  body {
+    background: #ccc;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

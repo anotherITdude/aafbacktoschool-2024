@@ -20,7 +20,9 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         className={inter.className}>
-        {children}
+        <div className="bg-gray-100">
+          {children}
+          </div>
       </body>
     </html>
   );
