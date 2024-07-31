@@ -51,6 +51,16 @@
   src: url("../Fonts/Gotham-Medium_5.otf");
 }
 
+@font-face {
+  font-family: "Circular-Bold";
+  src: url("../Fonts/CircularStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  src: url("../Fonts/CircularStd-Book.otf");
+}
+
 /* @layer base {
   * {
     @apply border-border;
@@ -63,6 +73,13 @@
 @layer components {
   body {
     background: #ccc;
+  }
+
+  .competition_section{
+    background-image: url(./../public/competition_bg.png);
+  }
+  .winlist_section{
+    background-image: url(./../public/winlist.png);
   }
 }
 

@@ -16,7 +16,8 @@ module.exports = {
       },
     },
     colors: {
-      webBlue: "#052C6F",
+      webBlue: "#041571",
+      webSkyBlue: "#28BFDE",
       webWhite: "#ffffff",
       webRed: "#E2211C",
       webGray: "#3F4040",
@@ -26,6 +27,8 @@ module.exports = {
     },
     fontFamily: {
       "DINCondensed-Bold": ["DINCondensed-Bold"],
+      "Circular-Bold": ["Circular-Bold"],
+      "Circular-Book": ["Circular-Book"],
       "DIN-Bold": ["DIN-Bold"],
       "DIN-Black": ["DIN-Black"],
       "DIN": ["DIN"],
