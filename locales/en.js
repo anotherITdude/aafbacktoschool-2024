@@ -2,6 +2,18 @@ const translations = {
   //Hero section
   'promition': 'PROMOTION VALID FROM 29th NOV TO 9th DEC 2023',
   'terms_and_conditions': '*Terms & Conditions Apply',
+  //Competition section 
+  'arrive_line_1': 'ARRIVE IN STYLE TO',
+  'arrive_line_2': 'START YOUR SCHOOL YEAR',
+  'win_nissan_x_trails': 'WIN 3 NISSAN X-TRAILS',
+  'and_more': 'AND MORE',
+  'competition_p': 'Back to school in style… Buy selected Al Ain Farms products and enter the details here for the chance to win big.',
+  'period_title': 'Competition period',
+  'period_from': '15th August to',
+  'period_to': '15th September 2024',
+  'winners_announcement': 'WINNERS ANNOUNCEMENT',
+  'winners_announcement_date': '10th OCT 2024',
+  //Competition section
   //Happy UAE day section
   'happy': 'HAPPY',
   'uae': 'UAE',
