@@ -9,7 +9,7 @@ interface SectionInterface {
 
 const Section: React.FC<SectionInterface> = ({ children, className }) => {
   return (
-    <div className={`pt-8 pb-8 pl-4 pr-4 min-h-[500px] ${twMerge(className)}`}>
+    <div className={`pt-8 pb-8 pl-4 pr-4 min-h-[400px] ${twMerge(className)}`}>
       {children}
     </div>
   );

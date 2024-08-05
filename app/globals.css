@@ -74,13 +74,21 @@
   body {
     background: #ccc;
   }
-
+  .hero{
+    background-image: url(./../public/hero_bg.jpg);
+  }
   .competition_section{
     background-image: url(./../public/competition_bg.png);
   }
   .winlist_section{
     background-image: url(./../public/winlist.png);
   }
+  .howtoenter_section{
+    background-image: url(./../public/howtoenter.png);
+  }
+  /* .registration_image{
+    background-image: url(./../public/register_bg.png);
+  } */
 }
 
 @layer utilities {

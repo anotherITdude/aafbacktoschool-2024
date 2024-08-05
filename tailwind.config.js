@@ -17,7 +17,9 @@ module.exports = {
     },
     colors: {
       webBlue: "#041571",
+      webLightBlue: "#2F3C81",
       webSkyBlue: "#28BFDE",
+      webYellow: "#FFBA11",
       webWhite: "#ffffff",
       webRed: "#E2211C",
       webGray: "#3F4040",
