@@ -74,7 +74,9 @@
   body {
     background: #ccc;
   }
-
+  .hero{
+    background-image: url(./../public/hero_bg.jpg);
+  }
   .competition_section{
     background-image: url(./../public/competition_bg.png);
   }
