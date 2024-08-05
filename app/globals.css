@@ -84,6 +84,9 @@
   .howtoenter_section{
     background-image: url(./../public/howtoenter.png);
   }
+  /* .registration_image{
+    background-image: url(./../public/register_bg.png);
+  } */
 }
 
 @layer utilities {

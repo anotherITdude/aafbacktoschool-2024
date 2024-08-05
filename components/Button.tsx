@@ -64,20 +64,21 @@ const Button: React.FC<ButtonProps> = ({
       className={`
       group
     relative
+    
     disabled:opacity-70
     disabled:cursor-not-allowed
     rounded-full
     hover:opacity-80
     transition
-    w-[150px]
+    w-[160px]
     float-right
     
-    ${locale === "/" ? "font-DIN-Bold" : "font-DINArabic-Black"}
-    ${outline ? "bg-white" : "bg-webBlue pt-2 pb-2"}
-    ${outline ? "border-black" : "border-webBlue"}
-    ${outline ? "text-webBlue" : "text-webWhite"}
-    ${small ? " py-2" : "py-1"}
-    ${small ? "text-sm text-webBlue" : "text-sm"}
+    ${locale === "/" ? "font-Circular-Bold" : "font-helvetica-neue-lt-arabic-75-bol"}
+    ${outline ? "bg-white" : "bg-webYellow pt-3 pb-3"}
+    ${outline ? "border-black" : "border-webWhite"}
+    ${outline ? "text-webBlue" : "text-webBlue"}
+    ${small ? " py-4" : "py-2"}
+    ${small ? "text-md text-webBlue" : "text-md"}
     ${small ? "font-light" : "font-semibold"}
     ${small ? "border-[0.8px]" : "border-[1px]"}
     `}
