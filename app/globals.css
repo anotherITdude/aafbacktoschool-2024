@@ -81,6 +81,9 @@
   .winlist_section{
     background-image: url(./../public/winlist.png);
   }
+  .howtoenter_section{
+    background-image: url(./../public/howtoenter.png);
+  }
 }
 
 @layer utilities {
