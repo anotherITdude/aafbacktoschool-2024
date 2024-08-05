@@ -26,7 +26,8 @@ export const schema = (t: any) =>
     emirate: yup.string().required(t.emirate_error),
     eid: yup
       .string()
-      .nullable()
+      //.nullable()
+      .required(t.emirate_id_number_error)
       .test("is-number-and-min-digits", t.emirate_id_number_error, (value) => {
         if (!value) {
           return true; // If field is empty, consider it valid
