@@ -42,7 +42,7 @@ const Competition: React.FC<CompetitionProps> = ({ title }) => {
       <div className="flex flex-col md:flex-row justify-center items-center bg-webWhite">
         <div
           className="flex w-full bg-red-200 text-center justify-center items-center competition_section
-          competition_section bg-right md:bg-cover    bg-no-repeat h-[540px]"
+          competition_section bg-right md:bg-cover    bg-no-repeat h-[520px]"
         >
           <div className="flex flex-col md:flex-row justify-center items-center w-full">
             <motion.div {...motionSettingsleft2right}>
@@ -52,7 +52,10 @@ const Competition: React.FC<CompetitionProps> = ({ title }) => {
                 className="hidden md:block w-[100px] md:w-[240px]"
               />
             </motion.div>
-            <div className="flex flex-col gap-y-0 max-w-[500px] capitalize">
+            <div
+              className="flex flex-col gap-y-0 max-w-[500px] capitalize 
+            pl-4 pr-4 md:pl-0 md:pr-0"
+            >
               <div
                 className={`text-webBlue ${
                   locale === "/"
@@ -66,84 +69,98 @@ const Competition: React.FC<CompetitionProps> = ({ title }) => {
               <div
                 className={`  ${
                   locale === "/"
-                    ? "font-Circular-Bold text-3xl md:text-4xl gap-y-0"
-                    : "font-helvetica-neue-lt-arabic-75-bol text-3xl md:text-3xl mb-2 gap-y-2"
+                    ? "font-Circular-Bold text-2xl md:text-4xl gap-y-0"
+                    : "font-helvetica-neue-lt-arabic-75-bol text-2xl md:text-3xl mb-2 gap-y-2"
                 }`}
               >
-                <p className={`bg-webBlue text-webWhite  m-auto 
-                  ${
-                    locale === "/"
-                      ? "pt-1 pb-1"
-                      : "pt-3 pb-5"
-                  }
-                  `}>
+                <p
+                  className={`bg-webBlue text-webWhite  m-auto 
+                  ${locale === "/" ? "pt-1 pb-1" : "pt-3 pb-5"}
+                  `}
+                >
                   {t.win_nissan_x_trails}
                 </p>
                 <p
                   className={`bg-webSkyBlue text-webWhite w-full md:w-[50%] m-auto 
-                    ${
-                      locale === "/"
-                        ? "pt-1 pb-1"
-                        : "pt-0 pb-2"
-                    }
+                    ${locale === "/" ? "pt-1 pb-1" : "pt-0 pb-2"}
                     `}
                 >
                   {t.and_more}
                 </p>
               </div>
-              <p className={`text-sm text-center text-webBlue mt-4
+              <p
+                className={`text-sm text-center text-webBlue mt-4
                 ${
                   locale === "/"
                     ? "font-Circular-Bold text-sm md:text-sm gap-y-0"
                     : "font-helvetica-neue-lt-arabic-75-bol text-3xl md:text-sm mb-2 gap-y-2"
                 }
-                `}>
+                `}
+              >
                 {t.competition_p}
               </p>
-              <div className={`flex justify-center gap-x-8 mt-4 text-webBlue  ${locale === "/" ? "text-left" : "text-right"}`}>
+              <div
+                className={`flex flex-col md:flex-row mt-4 
+              justify-center text-webBlue
+              w-[75%] md:w-full 
+              m-auto md:m-0
+              gap-x-8 
+              gap-y-4 md:gap-y-0 
+                ${locale === "/" ? "text-left" : "text-right"}`}
+              >
                 <div className="flex left border-2  border-webBlue p-2 gap-x-3 rounded-xl">
-                  <motion.div >
+                  <motion.div>
                     <Image
                       src={star}
                       alt="star"
                       className="w-[20px] md:w-[20px]"
                     />
                   </motion.div>
-                  <div className={`flex-col text-xs 
+                  <div
+                    className={`flex-col text-xs 
                     ${
                       locale === "/"
                         ? "font-Circular-Bold text-3xl md:text-sm gap-y-0"
                         : "font-helvetica-neue-lt-arabic-75-bol text-3xl md:text-sm mb-2 gap-y-2"
                     }
-                    `}>
+                    `}
+                  >
                     <p className="uppercase">{t.period_title}</p>
-                    <p className={`${locale === "/" ? "" : "mt-2 "}`}>{t.period_from}</p>
+                    <p className={`${locale === "/" ? "" : "mt-2 "}`}>
+                      {t.period_from}
+                    </p>
                     <p>{t.period_to}</p>
                   </div>
                 </div>
                 <div className="flex right border-2  border-webBlue p-2 gap-x-3 rounded-xl">
-                <div>
+                  <div>
                     <Image
                       src={star}
                       alt="star"
                       className="w-[20px] md:w-[20px]"
                     />
                   </div>
-                  <div className={`flex-col text-xs 
+                  <div
+                    className={`flex-col text-xs 
                     ${
                       locale === "/"
                         ? "font-Circular-Bold text-3xl md:text-sm gap-y-0"
                         : "font-helvetica-neue-lt-arabic-75-bol text-3xl md:text-sm mb-2 gap-y-2"
                     }
-                    `}>
+                    `}
+                  >
                     <p className="uppercase">{t.winners_announcement}</p>
-                    <p className={`
+                    <p
+                      className={`
                       ${
                         locale === "/"
-                          ? "font-Circular-Bold text-3xl md:text-sm gap-y-0"
-                          : "font-HelveticaNeueLTArabic-Romanl mt-2 text-3xl md:text-sm mb-2 gap-y-2"
+                          ? "font-Circular-Bold text-xs md:text-sm gap-y-0"
+                          : "font-HelveticaNeueLTArabic-Romanl mt-2 text-xs md:text-sm mb-2 gap-y-2"
                       }
-                      `}>{t.winners_announcement_date}</p>
+                      `}
+                    >
+                      {t.winners_announcement_date}
+                    </p>
                   </div>
                 </div>
               </div>
