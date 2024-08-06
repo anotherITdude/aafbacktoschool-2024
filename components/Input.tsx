@@ -73,13 +73,14 @@ const Input: React.FC<InputProps> = ({
         className={`
           absolute 
           
-          ${locale === "/" ? "text-sm font-Circular-Bold" : "text-sm font-HelveticaNeueLTArabic-Roman"}
+          ${locale === "/" ? "text-sm font-Circular-Bold" : "text-sm font-helvetica-neue-lt-arabic-75-bol"}
+          ${type === "file" ? "top-3 " : "top-4"}
           duration-150 
           transform
           -translate-y-3
           uppercase 
           tracking-widest
-          top-4 
+          
           z-10 
           origin-[0] 
 

@@ -29,11 +29,11 @@ const Terms = () => {
             {t.terms_heading}
           </h1>
           <ul
-            className={`list-decimal mt-4 
+            className={`list-decimal mt-4 flex flex-col gap-y-2
           ${
             locale === "/"
               ? "font-Circular-Book text-sm md:text-sm pl-4"
-              : "font-HelveticaNeueLTArabic-Roman text-sm md:text-lg pr-4"
+              : "font-HelveticaNeueLTArabic-Roman text-sm md:text-sm pr-4"
           }
           `}
           >
