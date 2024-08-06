@@ -72,7 +72,7 @@ const HowToEnter = () => {
                     : "font-HelveticaNeueLTArabic-Roman gap-y-6"
                 }`}
               >
-                <motion.div className="flex gap-x-4">
+                <motion.div className={`flex  ${locale === '/' ?  'gap-x-4' : 'gap-x-2'}`}>
                   <div className="">
                     <div
                       className="w-7 h-7 flex justify-center items-center rounded-full
@@ -81,12 +81,12 @@ const HowToEnter = () => {
                       {t.step_1}
                     </div>
                   </div>
-                  <div className=" text-sm md:text-lg text-webWhite pr-2 md:pr-8">
+                  <div className={`text-sm md:text-lg text-webWhite ${locale === '/' ? 'pr-2 md:pr-8' : 'pr-2 md:pl-8'}`}>
                     {t.step_1_content}
                   </div>
                 </motion.div>
 
-                <motion.div className="flex gap-x-4">
+                <motion.div className={`flex  ${locale === '/' ?  'gap-x-4' : 'gap-x-2'}`}>
                   <div className="">
                     <div
                       className="w-7 h-7 flex justify-center items-center rounded-full
@@ -95,12 +95,12 @@ const HowToEnter = () => {
                       {t.step_2}
                     </div>
                   </div>
-                  <div className=" text-sm md:text-lg text-webWhite pr-2 md:pr-8">
+                  <div className={`text-sm md:text-lg text-webWhite ${locale === '/' ? 'pr-2 md:pr-8' : 'pr-2 md:pl-8'}`}>
                     {t.step_2_content}
                   </div>
                 </motion.div>
 
-                <motion.div className="flex gap-x-4">
+                <motion.div className={`flex  ${locale === '/' ?  'gap-x-4' : 'gap-x-2'}`}>
                   <div className="">
                     <div
                       className="w-7 h-7 flex justify-center items-center rounded-full
@@ -109,12 +109,12 @@ const HowToEnter = () => {
                       {t.step_3}
                     </div>
                   </div>
-                  <div className=" text-sm md:text-lg text-webWhite pr-2 md:pr-8">
+                  <div className={`text-sm md:text-lg text-webWhite ${locale === '/' ? 'pr-2 md:pr-8' : 'pr-2 md:pl-8'}`}>
                     {t.step_3_content}
                   </div>
                 </motion.div>
 
-                <motion.div className="flex gap-x-4">
+                <motion.div className={`flex  ${locale === '/' ?  'gap-x-4' : 'gap-x-2'}`}>
                   <div className="">
                     <div
                       className="w-7 h-7 flex justify-center items-center rounded-full
@@ -123,7 +123,7 @@ const HowToEnter = () => {
                       {t.step_4}
                     </div>
                   </div>
-                  <div className="text-sm md:text-lg text-webWhite pr-2 md:pr-8">
+                  <div className={`text-sm md:text-lg text-webWhite ${locale === '/' ? 'pr-2 md:pr-8' : 'pr-2 md:pl-8'}`}>
                     {t.step_4_content}
                   </div>
                 </motion.div>

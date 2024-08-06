@@ -60,7 +60,7 @@ const Competition: React.FC<CompetitionProps> = ({ title }) => {
                 className={`text-webBlue ${
                   locale === "/"
                     ? "font-Circular-Bold text-3xl md:text-4xl gap-y-2"
-                    : "font-helvetica-neue-lt-arabic-75-bol text-3xl md:text-3xl  mb-6"
+                    : "font-helvetica-neue-lt-arabic-75-bol text-3xl md:text-4xl  mb-6"
                 }`}
               >
                 <p className="">{t.arrive_line_1}</p>
@@ -75,21 +75,21 @@ const Competition: React.FC<CompetitionProps> = ({ title }) => {
               >
                 <p
                   className={`bg-webBlue text-webWhite  m-auto 
-                  ${locale === "/" ? "pt-1 pb-1" : "pt-3 pb-5"}
+                  ${locale === "/" ? "pt-1 pb-1" : "pt-1 pb-2"}
                   `}
                 >
                   {t.win_nissan_x_trails}
                 </p>
                 <p
                   className={`bg-webSkyBlue text-webWhite w-full md:w-[50%] m-auto 
-                    ${locale === "/" ? "pt-1 pb-1" : "pt-0 pb-2"}
+                    ${locale === "/" ? "pt-1 pb-1" : "-pt-1 pb-2"}
                     `}
                 >
                   {t.and_more}
                 </p>
               </div>
               <p
-                className={`text-sm text-center text-webBlue mt-4
+                className={`text-sm text-center text-webBlue mt-4 md:mb-5
                 ${
                   locale === "/"
                     ? "font-Circular-Bold text-sm md:text-sm gap-y-0"
@@ -132,7 +132,9 @@ const Competition: React.FC<CompetitionProps> = ({ title }) => {
                     <p>{t.period_to}</p>
                   </div>
                 </div>
-                <div className="flex right border-2  border-webBlue p-2 gap-x-3 rounded-xl">
+                <div className={`flex  right border-2  border-webBlue p-2 gap-x-3 rounded-xl
+                  ${locale === "/" ? "pt-2 pb-2 md:pt-5 md:pb-0" : "pt-4 pb-0 md:pt-5"}
+                  `}>
                   <div>
                     <Image
                       src={star}
