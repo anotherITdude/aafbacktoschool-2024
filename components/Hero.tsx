@@ -5,6 +5,8 @@ import hero_en_left_top from "./../public//hero_en_left_top.png";
 import hero_en_left_bot from "./../public/hero_en_left_bottom.png";
 import hero_en from "./../public/hero_en.png";
 import hero_ar from "./../public/hero_ar.png";
+import mobile_en from "./../public/mobile_en.png";
+import mobile_ar from "./../public/mobile_ar.png";
 
 import hero_left_ar from "./../public/hero_left_ar.png";
 import Image from "next/image";
@@ -13,7 +15,7 @@ import { motion } from "framer-motion";
 import en from "../locales/en";
 import ar from "../locales/ar";
 import { usePathname } from "next/navigation";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar"; 
 
 const HeroAr = () => {
   const motionSettingsh2 = {
@@ -55,8 +57,8 @@ const HeroAr = () => {
   return (
     <div
       className="hero
-    bg-cover bg-right-bottom bg-no-repeat
-    h-[600px] 
+    bg-opacity-15 bg-left-bottom md:bg-right-bottom bg-no-repeat
+    
     md:bg-cover md:h-full
     flex flex-col overflow-hidden"
     >
@@ -70,7 +72,7 @@ const HeroAr = () => {
         <div
           className={`
           flex h-full justify-evenly items-center w-full
-          ${locale === "/" ? "pr-6 md:pl-16 -mt-[10%]" : "pr-6 md:pr-16 "}
+          ${locale === "/" ? "pr-0 md:pl-16 -mt-[10%]" : "pr-6 md:pr-16 "}
           `}
         >
           <motion.div
@@ -79,18 +81,21 @@ const HeroAr = () => {
             ${
               locale === "/"
                 ? " -mb-16 md:mb-0 md:mr-20"
-                : " -mb-16 md:mb-0 ml-5 md:ml-20"
+                : " -mb-0 md:mb-0 md:ml-20"
             }
             `}
           >
             {" "}
             {locale === "/" ? (
               <div>
-                <Image className="" alt="how to enter" src={hero_en} />
-                
+                <Image className="hidden md:block" alt="how to enter" src={hero_en} />
+                <Image className="block md:hidden -mt-12" alt="how to enter" src={mobile_en} />
               </div>
             ) : (
-              <Image className="" alt="how to enter" src={hero_ar} />
+              <div>
+                <Image className="hidden md:block" alt="how to enter" src={hero_ar} />
+                <Image className="block md:hidden" alt="how to enter" src={mobile_ar} />
+              </div>
             )}
           </motion.div>
         </div>
