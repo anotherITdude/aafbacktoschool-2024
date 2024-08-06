@@ -54,7 +54,7 @@ const translations = {
   'emirate_id_number_error': 'EID must be at least 15 digits',
   'upload_purchase_receipt': 'Upload purchase receipt',
   'upload_purchase_receipt_error1': 'Receipt is required',
-  'upload_purchase_receipt_error2': 'Please upload your receipt. Max 2MB',
+  'upload_purchase_receipt_error2': 'Please upload your receipt',
   'max_upload_size': 'MAXIMUM UPLOAD SIZE : 2MB',
   'form_submit_message': 'Submitting form...',
   'uploading_data': 'Uploading data. Please wait...',
