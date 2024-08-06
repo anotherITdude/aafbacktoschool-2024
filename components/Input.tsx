@@ -73,7 +73,7 @@ const Input: React.FC<InputProps> = ({
         className={`
           absolute 
           
-          ${locale === "/" ? "text-sm font-Circular-Bold" : "text-sm font-helvetica-neue-lt-arabic-75-bo "}
+          ${locale === "/" ? "text-sm font-Circular-Bold" : "text-sm font-HelveticaNeueLTArabic-Roman"}
           duration-150 
           transform
           -translate-y-3

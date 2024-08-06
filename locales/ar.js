@@ -26,7 +26,7 @@ const translations = {
   'family_weekend': 'عطلة نهاية الأسبوع مع العائلة',
   'staycation': 'إقامة فندقية',
   'staycation_info': "تسوق، استمتع، وفّر، وعش أسعد اللحظات مع كارفور اشتري منتجات مزارع العين المفضلة لديك من أقرب فرع لكارفور ماركت وكن فائزًا محظوظًا برحلة لا تُنسى",
-    // How to enter section
+  // How to enter section
   'How_to_enter': 'كيفية المشاركة',
   'step_1': '01',
   'step_2': '02',
@@ -53,8 +53,8 @@ const translations = {
   'emirate_id_number_error': 'الحد الأدنى 15 رقمًا ',
   'upload_purchase_receipt': 'تحميل فاتورة الشراء',
   'upload_purchase_receipt_error1': 'فاتورة الشراء مطلوبة',
-  'upload_purchase_receipt_error2': 'الرجاء تحميل فاتورة الشراء. الحد الأقصى 2 ميجابايت',
-  'max_upload_size': 'الحد الأقصى لحجم التحميل: 2 ميجابايت',
+  'upload_purchase_receipt_error2': 'الرجاء تحميل فاتورة الشراء. الحد الأقصت',
+  'max_upload_size': 'الحد الأقصى لحجم التحميل ',
   'form_submit_message': 'جارٍ تقديم النموذج...',
   'uploading_data': 'جارٍ تحميل البيانات. يرجى الانتظار...',
   'upload_successfull': 'تم التحميل بنجاح!',

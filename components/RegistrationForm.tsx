@@ -99,7 +99,7 @@ const RegistrationForm = () => {
     <div
       id="register"
       className="w-[90%] md:w-[70%]
-    pb-14 pt-10 md:pt-0 md:pb-[0px]
+    pb-14 pt-14 md:pt-0 md:pb-[0px]
     md:mt-[9%]  justify-center items-center  "
     >
       <div className="">
@@ -108,7 +108,7 @@ const RegistrationForm = () => {
             className={` text-webBlue text-center uppercase mb-8
           ${
             locale === "/"
-              ? "font-Circular-Bold text-5xl md:text-5xl pl-4"
+              ? "font-Circular-Bold text-4xl md:text-5xl pl-4"
               : "font-helvetica-neue-lt-arabic-75-bol text-4xl md:text-6xl pr-4"
           }
           `}
@@ -119,7 +119,7 @@ const RegistrationForm = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="pl-4 pr-4 pt-2 mt-1"
           >
-            <div className="flex flex-col gap-x-6 mb-6 md:flex-row justify-evenly">
+            <div className="flex flex-col gap-x-6 gap-y-6 md:gap-y-0 mb-6 md:flex-row justify-evenly">
               <div className="form-field w-full ">
                 <Input
                   id="name"
@@ -143,7 +143,7 @@ const RegistrationForm = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-x-6 mb-6 md:flex-row justify-evenly">
+            <div className="flex flex-col gap-x-6 gap-y-6 md:gap-y-0 mb-6 md:flex-row justify-evenly">
               <div className="form-field w-full">
                 <Input
                   id="email"
@@ -166,7 +166,7 @@ const RegistrationForm = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-x-6 mb-6 md:flex-row justify-evenly">
+            <div className="flex flex-col gap-x-6 gap-y-6 md:gap-y-0 mb-6 md:flex-row justify-evenly">
             <div className="form-field w-full">
               <Input
                 id="eid"
