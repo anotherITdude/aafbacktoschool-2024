@@ -66,7 +66,7 @@ const HeroAr = () => {
 
       <div
         className="flex flex-col justify-center   md:flex-row md:justify-between items-center
-        pl-4 pr-4 -mb-10 h-[600px]
+        pl-4 pr-4 -mb-10 h-[590px]
         "
       >
         <div
@@ -77,11 +77,11 @@ const HeroAr = () => {
         >
           <motion.div
             {...motionSettingsleft2right}
-            className={` mt-0 md:mt-0 
+            className={` 
             ${
               locale === "/"
                 ? " -mb-16 md:mb-0 md:mr-20"
-                : " -mb-0 md:mb-0 md:ml-20"
+                : " -mb-16 md:mb-0 md:ml-20"
             }
             `}
           >
@@ -94,7 +94,7 @@ const HeroAr = () => {
             ) : (
               <div>
                 <Image className="hidden md:block" alt="how to enter" src={hero_ar} />
-                <Image className="block md:hidden" alt="how to enter" src={mobile_ar} />
+                <Image className="block md:hidden -mt-20 " priority alt="how to enter" src={mobile_ar} />
               </div>
             )}
           </motion.div>
