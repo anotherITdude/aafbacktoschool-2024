@@ -26,7 +26,7 @@ const Winlist = () => {
   const locale = usePathname();
   return (
     <div className="winlist_section bg-right-top md:bg-cover bg-no-repeat h-auto p-10 flex justify-center items-center">
-      <div className="flex gap-x-4 md:gap-x-0 
+      <div className="flex gap-x-4 md:gap-x-0 pb-3 md:pb-0
       md:flex-col justify-center w-[95%]">
         <div className={`flex flex-col md:flex-row gap-y-6 md:gap-y-0 justify-start w-full  
           ${ locale === "/" ? "pl-0 md:pl-9 gap-x-[20%]" : "pr-0 md:pr-9 gap-x-[20%]"}`}>
