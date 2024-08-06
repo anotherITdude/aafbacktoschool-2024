@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import en from "../locales/en";
 import ar from "../locales/ar";
 import { usePathname } from "next/navigation";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar"; 
 
 const HeroAr = () => {
   const motionSettingsh2 = {
