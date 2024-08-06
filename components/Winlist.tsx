@@ -25,36 +25,36 @@ const Winlist = () => {
   };
   const locale = usePathname();
   return (
-    <div className="winlist_section bg-right-top md:bg-cover bg-no-repeat h-[500px] p-10 flex justify-center">
+    <div className="winlist_section bg-right-top md:bg-cover bg-no-repeat h-auto p-10 flex justify-center">
       <div className="flex flex-col md:flex-col justify-center w-[95%]">
-        <div className={`flex flex-row justify-start w-full  
+        <div className={`flex flex-col md:flex-row justify-start w-full  
           ${ locale === "/" ? "pl-9 gap-x-[20%]" : "pr-9 gap-x-[20%]"}`}>
           <motion.div className={`${locale === "/" ? "z-10" : "z-50"}`} {...motionSettingsleft2right}>
             {locale === "/"
-              ? <Image width={250} src={nissan} alt="nissan" />
-              : <Image width={250} src={nissan_ar} alt="nissan" />
+              ? <Image className="w-[200px] md:w-[250px]" src={nissan} alt="nissan" />
+              : <Image className="w-[200px] md:w-[250px]" src={nissan_ar} alt="nissan" />
             }
           </motion.div>
           <motion.div className="z-30" {...motionSettingsleft2right}>
             {locale === "/"
-              ? <Image width={250} src={iphone} alt="iphone" />
-              : <Image width={250} src={iphone_ar} alt="iphone" />
+              ? <Image className="w-[200px] md:w-[250px]" src={iphone} alt="iphone" />
+              : <Image className="w-[200px] md:w-[250px]" src={iphone_ar} alt="iphone" />
             }
             
           </motion.div>
         </div>
-        <div className={`flex flex-row justify-end w-full   -mt-32 pr-9
+        <div className={`flex flex-col md:flex-row justify-end w-full mt-0  md:-mt-32 pr-9
           ${ locale === "/" ? "pl-9 gap-x-[20%]" : "pl-9 gap-x-[22%]"}`}>
           <motion.div className={`${locale === "/" ? "z-20" : "z-40"}`} {...motionSettingsright2left}>
             {locale === "/"
-              ? <Image width={250} src={macbook} alt="macbook" />
-              : <Image width={250} src={macbook_ar} alt="macbook" />
+              ? <Image className="w-[200px] md:w-[250px]" src={macbook} alt="macbook" />
+              : <Image className="w-[200px] md:w-[250px]" src={macbook_ar} alt="macbook" />
             }
           </motion.div>
           <motion.div className={`${locale === "/" ? "z-40" : "z-20"}`} {...motionSettingsright2left}>
             {locale === "/"
-              ? <Image width={250} src={backpack} alt="backpack" />
-              : <Image width={250} src={backpack_ar} alt="backpack" />
+              ? <Image className="w-[200px] md:w-[250px]" src={backpack} alt="backpack" />
+              : <Image className="w-[200px] md:w-[250px]" src={backpack_ar} alt="backpack" />
             }
           </motion.div>
         </div>
