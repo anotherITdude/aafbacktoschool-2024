@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.624.0",
+    "@aws-sdk/s3-presigned-post": "^3.624.0",
+    "@aws-sdk/s3-request-presigner": "^3.624.0",
     "@hookform/resolvers": "^3.9.0",
+    "@prisma/client": "^5.18.0",
     "@radix-ui/react-select": "^2.1.1",
     "axios": "^1.7.3",
     "axois": "^0.0.1-security",
@@ -34,6 +39,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
+    "prisma": "^5.18.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
