@@ -57,6 +57,7 @@ const RegistrationForm = () => {
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     let toastStatus = toast.loading(t.uploading_data);
+    
     try {
       setIsLoading(true);
       data.contentType = data.receipt[0].type;
