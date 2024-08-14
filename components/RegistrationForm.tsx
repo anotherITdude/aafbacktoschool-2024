@@ -39,6 +39,7 @@ const RegistrationForm = () => {
     handleSubmit,
     formState: { errors },
     reset,
+    setValue,
   } = useForm<FieldValues>({
     resolver: yupResolver(schema(t)) as any, // Use 'as any' to handle type mismatch
 
@@ -155,7 +156,7 @@ const RegistrationForm = () => {
                   type="email"
                 />
               </div>
-              <div className="form-field w-full">
+              {/* <div className="form-field w-full">
                 <Input
                   id="emirate"
                   label={t.emirate}
@@ -164,6 +165,41 @@ const RegistrationForm = () => {
                   errors={errors}
                   type="string"
                 />
+              </div> */}
+              <div
+                className={` form-field w-full 
+              rounded-full
+                ${
+                  locale === "/"
+                    ? "font-BebasNeue tracking-wider font-bold  text-xs"
+                    : "font-helvetica-neue-lt-arabic-75-bol font-bold text-sm"
+                }
+                ${errors.emirate ? "text-webBlack" : "text-webBlue "}
+                `}
+              >
+                <Select
+                  dir={`${locale === "/" ? "ltr" : "rtl"}`}
+                  disabled={isLoading}
+                  onValueChange={(value) => setValue("emirate", value)}
+                >
+                  <SelectTrigger className="">
+                    <SelectValue className="" placeholder={t.emirate} />
+                  </SelectTrigger>
+                  <SelectContent className="">
+                    <SelectItem value="abu-dhabi">Abu Dhabi</SelectItem>
+                    <SelectItem value="dubai">Dubai</SelectItem>
+                    <SelectItem value="sharjah">Sharjah</SelectItem>
+                    <SelectItem value="ajman">Ajman</SelectItem>
+                    <SelectItem value="umm-al-quwain">Umm Al Quwain</SelectItem>
+                    <SelectItem value="ras-al-khaimah">
+                      Ras Al Khaimah
+                    </SelectItem>
+                    <SelectItem value="fujairah">Fujairah</SelectItem>
+                  </SelectContent>
+                </Select>
+                {errors.emirate && <p className={` text-webRed
+                  ${locale === "/" ? " ml-6 text-xs mt-1"
+                    : " mr-6 text-xs mt-1"}`}>{t.emirate_error}</p>}
               </div>
             </div>
 
@@ -211,9 +247,9 @@ const RegistrationForm = () => {
                 label={`${isLoading ? t.form_submit_message : t.register_now}`}
               />
             </div>
-            <motion.div {...motionSettingsleft2right} className="registration_image hidden md:block ">
+            {/* <motion.div {...motionSettingsleft2right} className="registration_image hidden md:block ">
               <Image className="m-auto max-w-[80%]" src={register_bg} alt="registration background" />
-            </motion.div>
+            </motion.div> */}
           </form>
         </div>
       </div>

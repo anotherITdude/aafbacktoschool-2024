@@ -53,7 +53,7 @@ const Input: React.FC<InputProps> = ({
               : "font-helvetica-neue-lt-arabic-75-bol"
           }
           text-[12px]
-          bg-white 
+          bg-webWhite 
           border-[1px]
           rounded-full
           px-5

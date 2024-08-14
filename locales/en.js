@@ -12,7 +12,7 @@ const translations = {
   'period_from': '15th August to',
   'period_to': '15th September 2024',
   'winners_announcement': 'WINNERS ANNOUNCEMENT',
-  'winners_announcement_date': '10th OCT 2024',
+  'winners_announcement_date': '10th OCTOBER 2024',
   //Competition section
   //Happy UAE day section
   'happy': 'HAPPY',
@@ -54,8 +54,8 @@ const translations = {
   'emirate_id_number_error': 'EID must be at least 15 digits',
   'upload_purchase_receipt': 'Upload purchase receipt',
   'upload_purchase_receipt_error1': 'Receipt is required',
-  'upload_purchase_receipt_error2': 'Please upload your receipt',
-  'max_upload_size': 'MAXIMUM UPLOAD SIZE : 2MB',
+  'upload_purchase_receipt_error2': 'MAXIMUM UPLOAD SIZE : 3MB',
+  'max_upload_size': 'MAXIMUM UPLOAD SIZE : 3MB',
   'form_submit_message': 'Submitting form...',
   'uploading_data': 'Uploading data. Please wait...',
   'upload_successfull': 'Upload successful!',
