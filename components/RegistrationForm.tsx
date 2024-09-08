@@ -87,6 +87,7 @@ const RegistrationForm = () => {
           toast.dismiss(toastStatus);
           toast.success(t.submission_completed);
           reset();
+          setTimeout(() => {location.reload()}, 1500);
         })
         .finally(() => {
           setIsLoading(false);
